@@ -15,6 +15,9 @@
 
 
 %macro ClearWork;
+dm log clear;
+dm output clear;
+
 /* CLEAR USER DEFINED MACRO VARIABLES EXCEPT FOR PATH */
 data vars;
 	set sashelp.vmacro;
